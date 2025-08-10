@@ -11,10 +11,12 @@
   "description": "",
   "type": "module",
   "dependencies": {
+    "dotenv": "^17.2.1",
     "p-map": "^7.0.3",
     "puppeteer": "^24.16.0"
   },
   "devDependencies": {
+    "@types/puppeteer": "^5.4.7",
     "tsx": "^4.20.3",
     "typescript": "^5.9.2"
   }
