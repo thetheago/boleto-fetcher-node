@@ -2,7 +2,8 @@
   "name": "boleto-fetcher-node",
   "version": "1.0.0",
   "scripts": {
-    "start": "ts-node src/main.ts",
+    "type-check": "tsc --noEmit",
+    "start": "npm run type-check && tsx src/main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "thiago <theago.dev@gmail.com>",
@@ -14,7 +15,7 @@
     "puppeteer": "^24.16.0"
   },
   "devDependencies": {
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
   }
 }
