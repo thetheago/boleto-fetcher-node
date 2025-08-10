@@ -16,9 +16,7 @@ async function main() {
   const envs = process.env;
 
   const crawlers: ICrawler[] = [
-    new VeroInternet('teste', 'teste'),
-    // new BoletoSiteA(envs.SITE_A_USER!, envs.SITE_A_PASS!),
-    // new BoletoSiteB(envs.SITE_B_USER!, envs.SITE_B_PASS!),
+    new VeroInternet(envs.VERO_LOGIN!, envs.VERO_PASS!),
   ];
 
   const results = await pMap(crawlers, crawler => crawler.run(), { concurrency: 3 });
