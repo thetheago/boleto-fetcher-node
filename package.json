@@ -1,0 +1,20 @@
+{
+  "name": "boleto-fetcher-node",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thiago <theago.dev@gmail.com>",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "p-map": "^7.0.3",
+    "puppeteer": "^24.16.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
